@@ -18,11 +18,11 @@ export default function WebDropdown() {
     {
       name: 'Web 2.0',
       value: 2
-    },
-    {
-      name: 'Web 3.0',
-      value: 3
     }
+    // {
+    //   name: 'Web 3.0',
+    //   value: 3
+    // }
   ]
 
   const check = items
@@ -46,7 +46,8 @@ export default function WebDropdown() {
     dispatch({
       type: 'CHANGE_WEB',
       payload: {
-        web: value
+        web: value,
+        loading: true
       }
     })
   }
@@ -71,7 +72,7 @@ export default function WebDropdown() {
       >
         <Menu.Items
           className={` ${
-            webVersion == 2 ? '-top-32' : ''
+            webVersion == 2 ? '-top-[92px]' : ''
           } absolute bg-background max-h-[163px] overflow-y-auto  right-0 z-50 mt-2 w-56  backdrop-blur-lg origin-top-right border border-border rounded-main text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
         >
           <div className="py-1">

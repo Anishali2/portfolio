@@ -1,9 +1,19 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 
 const Web2Header = () => {
   const path = useRouter().asPath
+  const dispatch = useDispatch()
+  const loading = () => {
+    dispatch({
+      type: 'CHANGE_LOADING',
+      payload: {
+        loading: false
+      }
+    })
+  }
   const links = [
     {
       name: 'Home',
@@ -28,6 +38,7 @@ const Web2Header = () => {
         {links.map((v) => {
           return (
             <li
+              onClick={() => loading()}
               key={v.name}
               className={
                 path == v.path ? 'bg-primary text-background underline' : ''
