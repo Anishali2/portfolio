@@ -62,7 +62,7 @@ const Web2Introduction = () => {
                 href={'/contact-us'}
                 className="bg-primary rounded-tr-2xl cursor-pointer hover:animate-pulse text-background p-1"
               >
-                Send me a Message {`#>`}
+                Send me a Message now {`#>`}
               </Link>
               {/* <div className="flex mt-2">
                 <div className="h-5 w-5 rounded-full mt-1.5 bg-primary"></div>r
