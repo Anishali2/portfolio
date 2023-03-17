@@ -2,24 +2,19 @@ import Link from 'next/link'
 import React from 'react'
 const posts = [
   {
+    title: 'Gigaland NFT MarketPlace',
+    href: 'https://v2-nft-ansihali1221-gmailcom.vercel.app/',
+    category: { name: 'NFT MarketPlace', href: '#' },
+    date: 'Sep 19, 2022',
+    datetime: '2020-03-16',
+    imageUrl: '/gigaland.png',
+    readingTime: '4 min'
+  },
+  {
     title: 'Rosemary School of Excellence',
     href: 'http://rosemaryschools.org/',
     category: { name: 'School Project', href: '#' },
     date: 'Sep 19, 2022',
-    technology: [
-      {
-        name: 'Next js',
-        icon: '/next-js.svg'
-      },
-      {
-        name: 'TypeScript',
-        icon: '/typescript-icon.svg'
-      },
-      {
-        name: 'Tailwind css',
-        icon: '/tailwind-css.svg'
-      }
-    ],
     datetime: '2020-03-16',
     imageUrl: '/school.png',
     readingTime: '4 min'
@@ -40,6 +35,7 @@ const posts = [
     }
   }
 ]
+// https://v2-nft-ansihali1221-gmailcom.vercel.app/
 const ProjectLinks = () => {
   const data = 'Projects'
   return (

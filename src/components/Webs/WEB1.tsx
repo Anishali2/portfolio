@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import AnimatedCursor from 'react-animated-cursor'
 import Loader from '../WebLoaders/Web1Loader'
